@@ -1,11 +1,5 @@
 package jaxb.test;
 
-/**
- * Created by IntelliJ IDEA.<br/>
- * User: User
- * Date: 17.01.2022
- * Time: 19:43
- */
 
 import jaxb.model.Department;
 import jaxb.model.Employee;
