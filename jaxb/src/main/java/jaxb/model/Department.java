@@ -1,11 +1,4 @@
 package jaxb.model;
-
-/**
- * Created by IntelliJ IDEA.<br/>
- * User: User
- * Date: 17.01.2022
- * Time: 19:42
- */
 import java.util.List;
 
 import jakarta.xml.bind.annotation.XmlAccessType;
@@ -27,15 +20,23 @@ public class Department {
     @XmlElementWrapper(name = "employees")
     @XmlElement(name = "employee")
     private List<Employee> employees;
-
-    /**
-     * This default constructor is required if there are other constructors.
-     */
     public Department() {
 
     }
+    
+    
 
-    public Department(String deptNo, String deptName, String location) {
+    public Department(String deptNo, String deptName, String location, List<Employee> employees) {
+		super();
+		this.deptNo = deptNo;
+		this.deptName = deptName;
+		this.location = location;
+		this.employees = employees;
+	}
+
+
+
+	public Department(String deptNo, String deptName, String location) {
         this.deptNo = deptNo;
         this.deptName = deptName;
         this.location = location;

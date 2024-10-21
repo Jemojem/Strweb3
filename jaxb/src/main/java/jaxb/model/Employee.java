@@ -4,14 +4,6 @@ import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
 import jakarta.xml.bind.annotation.XmlRootElement;
 
-/**
- * Created by IntelliJ IDEA.<br/>
- * User: User
- * Date: 17.01.2022
- * Time: 19:41
- */
-
-
 @XmlRootElement(name = "employee")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Employee {
@@ -20,9 +12,6 @@ public class Employee {
     private String empName;
     private String managerNo;
 
-    /**
-     * This default constructor is required if there are other constructors.
-     */
     public Employee() {
 
     }
